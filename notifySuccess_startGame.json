@@ -169,11 +169,15 @@
                                                 },
                                                 {
                                                     "type": "Audio",
-                                                    "source": "soundbank://soundlibrary/backgrounds_ambience/public_space/public_space_02",
+                                                    "source": "soundbank://soundlibrary/backgrounds_ambience/dining_kitchens_eating/dining_kitchens_02",
                                                     "filter": [
                                                         {
                                                             "type": "Volume",
                                                             "amount": "20%"
+                                                        },
+                                                        {
+                                                            "type": "Trim",
+                                                            "end" : 6000
                                                         }
                                                     ]
                                                 },
@@ -185,6 +189,15 @@
                                                             "source": "soundbank://soundlibrary/human/amzn_sfx_clear_throat_ahem_01"
                                                         },
                                                         {
+                                                            "type": "Mixer",
+                                                             "items": [
+                                                                 {
+                                                                     
+                                                                 
+                                                            "type": "Audio",
+                                                            "source":"soundbank://soundlibrary/alarms/back_up_beeps/back_up_beeps_08" 
+                                                        },
+                                                        {
                                                             "type": "Audio",
                                                             "source": "soundbank://soundlibrary/human/amzn_sfx_sneeze_01"
                                                         },
@@ -192,6 +205,10 @@
                                                             "type": "Audio",
                                                             "source": "soundbank://soundlibrary/human/hands/hands_09"
                                                         }
+                                                        ]
+                                                        }
+                                                    
+                                                    
                                                     ]
                                                 },
                                                 {
