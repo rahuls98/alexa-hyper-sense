@@ -11,7 +11,7 @@
             
                 {
                     "type": "Speech",
-                    "content": "Welcome to Level 2 in Classroom environment, Listen to the sound after the beep. Try to list out as many of the words you hear!",
+                    "content": "Welcome to Level 2 in Classroom environment, Listen to the sound after the beep. Pay close attention to the words being recited",
                     "description": "Expand on 'items' array to add multiple prompts, use response template arguments by adding it to 'content' like this ${payload.input_argument_name} and add SSML by changing 'contentType' to 'SSML' and adding SSML to 'content' <amazon:effect name=\"whispered\">like that</amazon:effect>"
                 },
                         {
@@ -34,11 +34,15 @@
                                                                 },
                                                                 {
                                                                     "type": "Silence",
-                                                                    "duration": 100
+                                                                    "duration": 300
                                                                 },
                                                                 {
                                                                     "type": "Speech",
                                                                     "content": "ate"
+                                                                },
+                                                                {
+                                                                    "type": "Silence",
+                                                                    "duration": 300
                                                                 },
                                                                  {
                                                                     "type": "Speech",
@@ -46,7 +50,7 @@
                                                                 },
                                                                 {
                                                                     "type": "Silence",
-                                                                    "duration": 100
+                                                                    "duration": 300
                                                                 },
                                                                 {
                                                                     "type": "Speech",
@@ -54,11 +58,15 @@
                                                                 },
                                                                 {
                                                                     "type": "Silence",
-                                                                    "duration": 100
+                                                                    "duration": 300
                                                                 },
                                                                 {
                                                                     "type": "Speech",
                                                                     "content": "Bate"
+                                                                },
+                                                                {
+                                                                    "type": "Silence",
+                                                                    "duration": 300
                                                                 },
                                                                 {
                                                                     "type": "Speech",
@@ -95,6 +103,15 @@
                         {
                             "type": "Audio",
                             "source": "soundbank://soundlibrary/musical/amzn_sfx_electronic_beep_02"
+                        },
+                        {
+                             "type": "Silence",
+                            "duration": 1000
+                        },
+                        {
+                            "type": "Speech",
+                            "contentType": "PlainText",
+                            "content": "Hope you heard most of the words. Can you recite them back to me? Do so one word at a time!"
                         }
                     
             ]
