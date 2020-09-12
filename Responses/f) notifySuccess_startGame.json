@@ -13,22 +13,16 @@
                     "type": "Sequencer",
                     "items": [
                         {
-                            "type": "Speech",
-                            "contentType": "text",
-                            "content": "This is a sound of a ${payload.getEnvType.environment} environment.",
-                            "description": "Expand on 'items' array to add multiple prompts, use response template arguments by adding it to 'content' like this ${payload.input_argument_name} and add SSML by changing 'contentType' to 'SSML' and adding SSML to 'content' <amazon:effect name=\"whispered\">like that</amazon:effect>"
-                        },
-                        {
                             "type": "Selector",
                             "items": [
                                 {
                                     "type": "Sequencer",
-                                    "when": "${payload.getEnvType.environment == 'classroom'}",
+                                    "when": "${['classroom', 'class', 'school'].includes(payload.getEnvType.environment)}",
                                     "items": [
                                         {
                                             "type": "Speech",
                                             "contentType": "PlainText",
-                                            "content": "Listen to the audio after the beep. Pay close attention to the words being recited."
+                                            "content": "This is a sound of a ${payload.getEnvType.environment} environment. Listen to the audio after the beep. Pay close attention to the words being recited."
                                         },
                                         {
                                             "type": "Silence",
@@ -59,7 +53,7 @@
                                                                 },
                                                                 {
                                                                     "type": "Speech",
-                                                                    "content": "orange"
+                                                                    "content": "Orange"
                                                                 },
                                                                 {
                                                                     "type": "Silence",
@@ -123,12 +117,12 @@
                                 },
                                 {
                                     "type": "Sequencer",
-                                    "when": "${payload.getEnvType.environment == 'home'}",
+                                    "when": "${['home', 'house].includes(payload.getEnvType.environment)}",
                                     "items": [
                                         {
                                             "type": "Speech",
                                             "contentType": "PlainText",
-                                            "content": "Listen to the audio after the beep. Pay close attention to the words being recited."
+                                            "content": "This is a sound of a ${payload.getEnvType.environment} environment. Listen to the audio after the beep. Pay close attention to the words being recited."
                                         },
                                         {
                                             "type": "Silence",
@@ -154,7 +148,7 @@
                                                         },
                                                         {
                                                             "type": "Speech",
-                                                            "content": "orange"
+                                                            "content": "Orange"
                                                         },
                                                         {
                                                             "type": "Silence",
@@ -224,8 +218,8 @@
                                 },
                                 {
                                     "type": "Speech",
-                                    "when": "${payload.getEnvType.environment == undefined || payload.getEnvType.environment == null}",
-                                    "content": "Sorry, I'm unable to load the game. Try again later!"
+                                    "when": "${payload.getEnvType.environment === undefined || payload.getEnvType.environment === null}",
+                                    "content": "Sorry. Try again later!"
                                 }
                             ]
                         }

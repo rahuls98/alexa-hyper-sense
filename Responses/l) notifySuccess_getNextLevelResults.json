@@ -10,42 +10,36 @@
             "description": "Change 'type' above to try different Selector Component Types like Sequencer",
             "items": [
                 {
-                   "type": "Selector",
-                   "strategy": "randomItem",
-                   "when": "${payload.getResult.correctWrong == 'correct' && payload.getResult.yesNo == 'yes'}",
-                   "items": [
+                    "type": "Selector",
+                    "strategy": "randomItem",
+                    "when": "${payload.getResult.correctWrong == 'correct' && payload.getResult.yesNo == 'yes'}",
+                    "items": [
                         {
-                             "type": "Speech",
+                            "type": "Speech",
                             "contentType": "text",
-                            "content": "Woohoo, you figured one out, can you try another?"
-                            
-                            
+                            "content": "Woo-hoo, you figured one out, can you try another? Let me know if you're not sure!"
                         },
                         {
-                             "type": "Speech",
+                            "type": "Speech",
                             "contentType": "text",
                             "content": "That's correct! Good job! Can you remember another word? Let me know if you can't!"
                         },
-                         {
-                             "type": "Speech",
+                        {
+                            "type": "Speech",
                             "contentType": "text",
                             "content": "YES! I did use that word. Can you recall anymore? Let me know if you're not sure!"
                         },
                         {
-                             "type": "Speech",
+                            "type": "Speech",
                             "contentType": "text",
-                            "content": "Someones on a roll. Let's keep this streak going. Let me know if you've run out of words!"
+                            "content": "Someone's on a roll. Let's keep this streak going. Let me know if you've run out of words!"
                         },
                         {
                             "type": "Speech",
                             "contentType": "text",
                             "content": "AWESOME, you got it. Let's go again. Let me know if you don't know anymore"
                         }
-                        
-                        
-                        ]
-                    
-                    
+                    ]
                 },
                 {
                     "type": "Sequencer",
@@ -63,7 +57,7 @@
                         {
                             "type": "Speech",
                             "contentType": "text",
-                            "content": "If you want to access the next level, just say level-up."
+                            "content": "If you wish to restart, just request for the environment you desire."
                         },
                         {
                             "type": "Silence",
@@ -72,16 +66,7 @@
                         {
                             "type": "Speech",
                             "contentType": "text",
-                            "content": "If you wish to replay the current level, just request for the environment you desire."
-                        },
-                        {
-                            "type": "Silence",
-                            "duration": 700
-                        },
-                        {
-                            "type": "Speech",
-                            "contentType": "text",
-                            "content": "If you wish to exit, say bye."
+                            "content": "If you want to exit, just say bye."
                         }
                     ]
                 },
@@ -92,10 +77,33 @@
                     "content": "Sorry, that's incorrect. Try again? Just let me know if you don't know!"
                 },
                 {
-                    "type": "Speech",
-                    "contentType": "text",
+                    "type": "Sequencer",
                     "when": "${payload.getResult.correctWrong == 'wrong' && payload.getResult.yesNo == 'no'}",
-                    "content": "I'm sorry you didn't get them all! You can give it another try!"
+                    "items": [
+                        {
+                            "type": "Speech",
+                            "contentType": "text",
+                            "content": "I'm sorry you didn't get them all! You can give it another try whenever you like!"
+                        },
+                        {
+                            "type": "Silence",
+                            "duration": 500
+                        },
+                        {
+                            "type": "Speech",
+                            "contentType": "text",
+                            "content": "If you wish to restart, just request for the environment you desire."
+                        },
+                        {
+                            "type": "Silence",
+                            "duration": 500
+                        },
+                        {
+                            "type": "Speech",
+                            "contentType": "text",
+                            "content": "If you want to exit, just say bye."
+                        }
+                    ]
                 }
             ]
         }
