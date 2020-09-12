@@ -12,7 +12,7 @@
                 {
                     "type": "Selector",
                     "strategy": "randomItem",
-                    "when": "${payload.getResult.correctWrong == 'correct' && payload.getResult.yesNo == 'yes'}",
+                    "when": "${payload.getLevelUpResults.correctWrong == 'correct' && payload.getLevelUpResults.yesNo == 'yes'}",
                     "items": [
                         {
                             "type": "Speech",
@@ -43,7 +43,7 @@
                 },
                 {
                     "type": "Sequencer",
-                    "when": "${payload.getResult.correctWrong == 'correct' && payload.getResult.yesNo == 'no'}",
+                    "when": "${payload.getLevelUpResults.correctWrong == 'correct' && payload.getLevelUpResults.yesNo == 'no'}",
                     "items": [
                         {
                             "type": "Speech",
@@ -73,12 +73,12 @@
                 {
                     "type": "Speech",
                     "contentType": "text",
-                    "when": "${payload.getResult.correctWrong == 'wrong' && payload.getResult.yesNo == 'yes'}",
+                    "when": "${payload.getLevelUpResults.correctWrong == 'wrong' && payload.getLevelUpResults.yesNo == 'yes'}",
                     "content": "Sorry, that's incorrect. Try again? Just let me know if you don't know!"
                 },
                 {
                     "type": "Sequencer",
-                    "when": "${payload.getResult.correctWrong == 'wrong' && payload.getResult.yesNo == 'no'}",
+                    "when": "${payload.getLevelUpResults.correctWrong == 'wrong' && payload.getLevelUpResults.yesNo == 'no'}",
                     "items": [
                         {
                             "type": "Speech",
