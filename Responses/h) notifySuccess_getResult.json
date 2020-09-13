@@ -86,7 +86,6 @@
                     "content": "Sorry, that's incorrect. Try again? Just let me know if you don't know!"
                 },
                 {
-                    
                     "type": "Sequencer",
                     "when": "${payload.getResult.correctWrong == 'wrong' && payload.getResult.yesNo == 'no'}",
                     "items": [
@@ -114,6 +113,12 @@
                             "content": "If you want to exit, just say bye."
                         }
                     ]
+                },
+                {
+                    "type": "Speech",
+                    "contentType": "text",
+                    "when": "${payload.getResult.correctWrong == \"\" && payload.getResult.yesNo == 'yes'}",
+                    "content": "Sorry, you've already said that word. Try to think of another!"
                 }
             ]
         }

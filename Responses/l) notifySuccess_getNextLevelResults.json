@@ -104,6 +104,12 @@
                             "content": "If you want to exit, just say bye."
                         }
                     ]
+                },
+                {
+                    "type": "Speech",
+                    "contentType": "text",
+                    "when": "${payload.getLevelUpResults.correctWrong == \"\" && payload.getLevelUpResults.yesNo == 'yes'}",
+                    "content": "Sorry, you've already said that word. Try to think of another!"
                 }
             ]
         }
