@@ -14,3 +14,6 @@ The condition can cause them to feel overwhelmed when too many competing noises 
 
 ## How we built it
 The skill makes use of the Alexa Conversations feature as its default dialog manager. The entire flow of the game was planned and developed using features provided with the Alexa skills kit, such as dialogs, utterance sets, slots, API definitions, etc. Apart from these, we also made complete use of the APL for Audio feature to generate a variety of audio responses. The backend technology used was Node.js, allowing us to write suitable API handlers and code for the seamless execution of the skill.
+
+Demo Video:  https://www.youtube.com/watch?v=lSdUMdQojQk#action=share
+Demo Presentation: https://docs.google.com/presentation/d/1g4AdETeUoO0jQDTrAt1t6DZfyvQ9Ghu9jWVaVuNfh2w/edit?usp=sharing
