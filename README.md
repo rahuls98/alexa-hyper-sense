@@ -12,13 +12,6 @@ The condition can cause them to feel overwhelmed when too many competing noises 
 <br><br>
 **DISCLAIMER** This tool does not provide medical advice, and is for informational and educational purposes only, and is not a substitute for professional medical advice, treatment or diagnosis.
 
-## How we built it
-The skill makes use of the Alexa Conversations feature as its default dialog manager. The entire flow of the game was planned and developed using features provided with the Alexa skills kit, such as dialogs, utterance sets, slots, API definitions, etc. Apart from these, we also made complete use of the APL for Audio feature to generate a variety of audio responses. The backend technology used was Node.js, allowing us to write suitable API handlers and code for the seamless execution of the skill.
-
-## APL for Audio Implementation
-- All the sound files that you heard in the demo were mixed and sequenced using the **APL for Audio** and **Alexa Sound kit Library**.
-- Carefully picked out the right sounds for each environment and mixed them seamlessly, incorporating volume filters and silences.
-- Made use of a random selector to bring a sense of spontaneity to the Alexa responses.
-
-Demo Video:  https://www.youtube.com/watch?v=lSdUMdQojQk#action=share <br>
-Demo Presentation: https://docs.google.com/presentation/d/1g4AdETeUoO0jQDTrAt1t6DZfyvQ9Ghu9jWVaVuNfh2w/edit?usp=sharing
+Skill Demo:  https://www.youtube.com/watch?v=lSdUMdQojQk#action=share <br>
+Extended Demo: https://drive.google.com/file/d/1_U4AFrOUjamPV9g9yqByOQF2j-4hXQxh/view?usp=sharing <br>
+Presentation: https://docs.google.com/presentation/d/1g4AdETeUoO0jQDTrAt1t6DZfyvQ9Ghu9jWVaVuNfh2w/edit?usp=sharing
