@@ -12,6 +12,7 @@ The condition can cause them to feel overwhelmed when too many competing noises 
 <br><br>
 **DISCLAIMER** This tool does not provide medical advice, and is for informational and educational purposes only, and is not a substitute for professional medical advice, treatment or diagnosis.
 
-Skill Demo:  https://www.youtube.com/watch?v=lSdUMdQojQk#action=share <br>
-Extended Demo: https://drive.google.com/file/d/1_U4AFrOUjamPV9g9yqByOQF2j-4hXQxh/view?usp=sharing <br>
-Presentation: https://docs.google.com/presentation/d/1g4AdETeUoO0jQDTrAt1t6DZfyvQ9Ghu9jWVaVuNfh2w/edit?usp=sharing
+Here's the:
+- <a href="https://www.youtube.com/watch?v=lSdUMdQojQk#action=share">Skill Demo</a>
+- <a href="https://drive.google.com/file/d/1_U4AFrOUjamPV9g9yqByOQF2j-4hXQxh/view?usp=sharing">Extended Demo</a>
+- <a href="https://docs.google.com/presentation/d/1g4AdETeUoO0jQDTrAt1t6DZfyvQ9Ghu9jWVaVuNfh2w/edit?usp=sharing">Presentation</a>
