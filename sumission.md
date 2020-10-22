@@ -57,4 +57,4 @@ https://docs.google.com/presentation/d/1g4AdETeUoO0jQDTrAt1t6DZfyvQ9Ghu9jWVaVuNf
 ```node.js```
 
 # Try it out
-www.amazon.com
+<a href="https://www.amazon.com/dp/B08J45RYWD">Alexa Audio Sense</a>
